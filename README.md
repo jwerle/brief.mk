@@ -26,13 +26,11 @@ $ wget https://raw.githubusercontent.com/jwerle/brief.mk/master/brief.mk
 ## usage
 
 ```mk
-CC ?= gcc
-CXX ?= g++
 ## commands to make brief
-BREIFC = CC CXX
+BREIFC = CC
 -include brief.mk
 
-SRC = $(wildcard src/*.c)
+SRC = beep.c boop.c
 OBJS = $(SRC:.c=.o)
 
 $(OBJS):
