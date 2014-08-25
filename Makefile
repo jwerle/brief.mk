@@ -1,3 +1,3 @@
 
 test:
-	$(MAKE) -f test.mk
+	@$(MAKE) -f test.mk
